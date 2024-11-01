@@ -1,0 +1,699 @@
+/* Global Styles */
+body {
+    font-family: 'Georgia', serif;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.highlight {
+    background-color: lightblue; /* Yellow background for highlights */
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.italic {
+    font-style: italic; /* Italic style for specified text */
+}
+
+/* Header Section */
+.header {
+    background-image: url(images/back.gif);
+    background-size: cover;
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.header h1 {
+    font-size: 48px;
+}
+
+.header p {
+    font-size: 24px;
+}
+
+.btn-primary {
+    background-color: #ff6700;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icon {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 24px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #444;
+    overflow: hidden;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar-nav li {
+    display: inline;
+    padding: 10px 20px;
+}
+
+.navbar-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* About Section */
+.about-section {
+    background-color: #e0f7fa; 
+    padding: 50px 0;
+    
+    
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 40px;
+    border: 2px solid #007bff;
+}
+
+.about-text {
+    flex: 1;
+}
+.quote {
+    font-size: 1.5em;         /* Larger font for the quote */
+    font-style: italic;       /* Italic style */
+    color: #000000;
+    margin: 20px 0 0px 180px;          /* Margin above and below the quote */
+    text-align: center;       /* Center the quote */
+}
+
+/* Quote Footer Style */
+.quote footer {
+    font-size: 1em;           /* Smaller font for footer */
+    color: #544e4e;              /* Lighter color for footer */
+    margin-top: 0.5em;        /* Margin above footer */
+}
+
+.info-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-list li {
+    margin: 10px 0;
+}
+
+/* Research Section */
+/* Section and Title */
+.research-section {
+    .oval-title{background-color: #007bff;}
+    .oval-title:hover {background-color: lawngreen; /* Darker blue on hover */}
+    padding: 80px 0;
+    text-align: center;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb); /* Soft gradient background */
+    position: relative;
+    overflow: hidden;
+}
+.project-section {
+    .oval-title{background-color: #007bff;}
+    .oval-title:hover {background-color: lawngreen; /* Darker blue on hover */}
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* .section-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+} */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Project Card Styles */
+.project-card {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Card Front and Back */
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+}
+
+.front {
+    /* background-color: #ec3616; */
+    background-image: url(images/pi.jpg);
+}
+
+.back {
+    background-color: #343a40;
+    transform: rotateY(180deg);
+}
+
+/* Icon Styles */
+.icon {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* Project Card Title and Description */
+h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+/* Back Link Styles */
+.back h3 {
+    margin-top: 20px;
+}
+
+.back p {
+    margin-top: 10px;
+}
+
+.back a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.back a:hover {
+    text-decoration: underline;
+}
+
+/* Card Flip Effect */
+.project-card:hover .front {
+    transform: rotateY(180deg);
+}
+
+.project-card:hover .back {
+    transform: rotateY(0deg);
+}
+/* Research */
+
+/* Research Section Styles */
+.research-section {
+    padding: 20px 0;
+    /* Set a specific background color or gradient here */
+    /* Alternatively, for a gradient */
+    background: linear-gradient(135deg, #0c2442, #ffffff); /* light blue gradient */
+    text-align: center;
+    overflow: hidden;
+}
+
+.research-section-title {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 40px;
+    opacity: 0;
+    animation: fadeInTitle 1.2s ease forwards;
+}
+
+.research-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Research Item Styling */
+.research-item {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #d1e6f7, #e9f3fc);
+    color: #37474f;
+    padding: 20px 30px;
+    margin: 15px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 1s ease forwards 0.5s;
+}
+
+/* Icon Styling */
+.icon-container {
+    background-color: #2196f3;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    transition: background-color 0.3s ease;
+}
+.icon-container i {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Hover Effect */
+.research-item:hover .icon-container {
+    background-color: #1e88e5;
+}
+
+.research-item:hover {
+    background: linear-gradient(135deg, #a8c7ea, #d1e9f9);
+    transform: scale(1.02);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInTitle {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    .research-item {
+        width: 90%;
+    }
+}
+
+
+
+/* Shared Styles */
+.oval-title {
+    display: block;
+    padding: 0.5em 2em;  /* Padding to give space around the text */
+     /* Background color for the oval */
+    color: #fff;            /* Text color */
+    font-size: 1.5em;      /* Font size */
+    font-weight: bold;      /* Font weight */
+    border-radius: 25px;    /* Creates the oval shape */
+    text-align: center;      /* Center the text */
+    margin-bottom: 2em;      /* Space below the title */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+/* Change color on hover */
+
+
+.timeline {
+    max-width: 800px;
+    margin: 0 auto;
+}
+ul {
+    padding-left: 20px;
+}
+.education-item:hover {
+    transform: translateY(-5px);
+}
+
+/* Education Section */
+.education-section {
+    .oval-title{background-color: #007bff;}
+    .oval-title:hover {background-color: lawngreen; /* Darker blue on hover */}
+    background-color: #f5f5f5;
+    padding: 2em 0;
+}
+
+.education-timeline .education-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2em;
+    padding: 1.5em;
+    border-left: 4px solid #007bff;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5em;
+    margin-right: 1em;
+}
+
+.education-content h3 {
+    font-size: 1.3em;
+    color: #333;
+    font-weight: bold;
+}
+
+.education-content p, .education-content ul {
+    color: #555;
+    line-height: 1.6;
+}
+
+.education-content ul li::before {
+    content: "• ";
+    color: #007bff;
+    font-weight: bold;
+}
+
+
+/* Experience Section */
+.experience-item:hover {
+    transform: translateY(-5px);
+}
+
+.experience-section {
+    .oval-title{background-color: green}
+    .oval-title:hover {background-color: lawngreen; /* Darker blue on hover */}
+    background-color: #e9f7ef;
+    padding: 2em 0;
+}
+
+.experience-timeline .experience-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2em;
+    padding: 1.5em;
+    border-left: 4px solid #28a745;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.experience-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #28a745;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.5em;
+    margin-right: 1em;
+}
+
+.experience-content h3 {
+    font-size: 1.3em;
+    color: #333;
+    font-weight: bold;
+}
+
+.experience-content p, .experience-content ul {
+    color: #555;
+    line-height: 1.6;
+}
+
+.experience-content ul li::before {
+    content: "• ";
+    color: #28a745;
+    font-weight: bold;
+}
+
+
+/* Extra-Curricular Activities Section Styling */
+.extra-curricular-section {
+    background-color: #f3f7fa;
+    padding: 60px 0;
+}
+
+
+/* Extra-Curricular Activities Section Styling */
+.extra-curricular-section {
+    .oval-title{background-color: #007bff;}
+    .oval-title:hover {background-color: lawngreen; /* Darker blue on hover */}
+    background-color: #f3f7fa;
+    padding: 60px 0;
+}
+
+
+/* 
+.section-title::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #007bff;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+} */
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    perspective: 1000px; /* Adds perspective for 3D flip */
+}
+
+.activity-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 123, 255, 0.15);
+    position: relative;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    transform-style: preserve-3d; /* Required for 3D effect */
+    transform-origin: center;
+}
+
+.activity-card:hover {
+    transform: rotateY(15deg) translateY(-5px); /* Tilt effect */
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.25);
+}
+
+.icon {
+    font-size: 40px;
+    color: #007bff;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.activity-card:hover .icon {
+    transform: scale(1.2); /* Icon zoom effect */
+}
+
+.activity-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.activity-card:hover h3 {
+    color: #007bff;
+}
+
+.activity-details {
+    list-style-type: none;
+    padding: 0;
+    color: #666;
+}
+
+.activity-details li {
+    font-size: 16px;
+    margin: 8px 0;
+    transition: color 0.3s;
+}
+
+.activity-card:hover .activity-details li {
+    color: #007bff;
+}
+
+.activity-card p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+.awards-section {
+    .oval-title{background-color: #007bff;}
+    .oval-title:hover {background-color: lawngreen; /* Darker blue on hover */}
+    padding: 20px 0;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.awards-section h2 {
+    /* font-size: 36px; */
+    margin-bottom: 40px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Carousel styling */
+.carousel {
+    position: relative;
+    max-width: 850px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 550px; /* Adjust height as needed */
+}
+
+.carousel-slide {
+    display: none; /* Hide all slides by default */
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 80px;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/* Navigation arrows */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    user-select: none;
+    transition: 0.6s ease;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fade effect for the slideshow */
+.fade {
+    animation: fadeEffect 1.5s; /* Adjust animation duration as needed */
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+
+
+
+/* Contact Section */
+.contact-section {
+    background-color: #e8f5e9; /* Light Green */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 5px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Footer Section */
+.footer {
+    /* background-color: #444; */
+    background-image: url(images/back.gif);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
